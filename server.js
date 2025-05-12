@@ -13,7 +13,7 @@ try {
     try {
       res.send("Server is running!");
     } catch (err) {
-      console.error("Error in route /:", err);
+      console.error("Error in route :", err);
       res.status(500).send("Something went wrong!");
     }
   });
@@ -22,7 +22,7 @@ try {
         res.send("Created");
         res.status(200).send("All are ok!");
     } catch (error) {
-        console.error("Error in route /:", err);
+        console.error("Error in route :", err);
         res.status(500).send("Something went wrong!");
     }
   })
